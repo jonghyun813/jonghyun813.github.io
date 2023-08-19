@@ -7,8 +7,6 @@ body {
   line-height: 1.6;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
-  /* font-size: 1.2em; */
-  /* font-weight: 400; */
 }
 
 h1 {
@@ -40,14 +38,6 @@ span {
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-span.index {
-  margin-right: 30px;
-  font-size: 15px;
-}
-span.index:hover {
-  color: cornflowerblue;
 }
 
 .fa {
