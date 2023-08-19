@@ -1,3 +1,95 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
-  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  /* font-size: 1.2em; */
+  /* font-weight: 400; */
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: -10px;
+}
+h4 {
+  font-size: 2em;
+  font-weight: 300;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+div {
+  display: block;
+}
+
+span {
+  cursor: pointer;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+span.index {
+  margin-right: 30px;
+  font-size: 15px;
+}
+span.index:hover {
+  color: cornflowerblue;
+}
+
+.fa {
+  margin-right: 10px;
+}
+
+.profile {
+  margin-top: 5%;
+  display: flex;
+}
+
+#profile-img {
+  width: 22%;
+}
+
+img {
+  max-width: 100%;
+  box-sizing: border-box;
+  /* width: 10vw; */
+  /* border-radius: 10%; */
+}
+
+#personal-info {
+  margin-left: 4%;
+}
+
+p.profile-links {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p.profile-info {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin-right: 30px;
+  font-size: 15px;
+}
+nav a:hover {
+  color: cornflowerblue;
 }
