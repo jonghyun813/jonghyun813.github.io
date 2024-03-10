@@ -3,7 +3,7 @@ main:
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "About"
-    url: "https://jonghyun813.github.io/Profile"
+    url: https://jonghyun813.github.io/Profile
   - title: "Projects"
   #   url: /year-archive/
   - title: "Paper Reviews"
