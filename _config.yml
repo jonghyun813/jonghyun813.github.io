@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko-KR"
+locale                   : "en-US"
 title                    : "개발 블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Jong Hyun Park"
   avatar           : "/assets/images/profile.jpg"
-  bio              : "Undergrad Student at Yonsei University, College of Computing"
+  bio              : "Undergrad Student at Yonsei Univ.<br>School of Integrated Technology"
   location         : "Seoul, South Korea"
   email            :
   links:
@@ -140,7 +140,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/jonghyun813"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
