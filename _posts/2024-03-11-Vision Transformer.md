@@ -66,12 +66,32 @@ Transformer encoder의 output으로 (196, 768) 크기의 데이터가 나왔을 
 
 
 
+#### Inductive Bias
+
+위에서 설명한 Vision Transformer의 구조는 CNN과는 달리 이미지에 특화된 inductive bias가 적다. 
+
+CNN에서는 인접 픽셀 간의 정보를 잘 추출해내므로 local한 영역에서 spatial information을 잘 찾아낸다고 알려져 있다 (locality).
+
+또한, CNN은 이미지 내의 객체, 패턴 등이 이동함에 따라 feature map의 결과도 달라지게 되어있다 (translation equivariance).
 
 
-attention을 각 픽셀에 적용하면 quadratic 때문에 계산상 안 좋다
 
-inductive bias에 대해
+그러나 Vision Transformer에서는 MLP layer들만 local, translationally equivariant의 inductive bias를 담고 있다.
 
-왜 하필 16x16으로 나누는 지
+또한, ViT의 학습 초기의 position embedding들은 2차원 위치에 대한 아무런 정보도 없기에 patch 간의 spatial relation을 학습하는 데 시간이 걸린다.
 
-attention 계산에 대해
+
+
+#### 왜 16x16 크기의 패치를 사용할까?
+
+Vision transformer에서는 작은 크기의 패치를 사용할수록 패치의 개수가 늘어나기에 computational cost는 적당하면서 좋은 성능을 나타낸 16x16이라는 크기를 사용한다고 한다.
+
+Patch 크기가 작을수록 성능은 좋아지는 경향이 나타난다고 한다.
+
+그러나, self attention의 시간복잡도는 $O(n^2d)$​이므로, n (patch 개수)이 커지면 computational cost가 크게 증가하게 된다.
+
+따라서 vision transformer에서는 computational cost는 적당하면서도 좋은 성능을 나타낸 16x16이라는 크기를 사용한다고 한다.
+
+
+
+#### Attention 계산에 대해 (추후 정리)
