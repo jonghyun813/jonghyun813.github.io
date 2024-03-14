@@ -4,7 +4,7 @@ Linear regression을 처음 배울 때, loss function으로 mean squared error�
 
 그러나 차이를 나타낼 수 있는 수많은 함수들 중 왜 하필 제곱을 사용하는 지에 대해 언급하는 자료는 많지 않다.
 
-그렇다면 왜 절댓값, 네제곱 등이 아닌 제곱을 사용할까?
+왜 절댓값, 네제곱 등이 아닌 제곱을 사용할까?
 
 
 
@@ -18,7 +18,7 @@ Linear regression을 처음 배울 때, loss function으로 mean squared error�
 
 위와 같은 데이터에 대해 linear regression을 수행한다고 하자.
 
-Linear regression을 하게 되면, 실제 데이터 값 $y$와 우리가 예측하는 데이터값 $\hat{y}$간의 차이, $\text{error} = y - \hat{y}$ 이 존재할 것이다.
+Linear regression을 하게 되면, 실제 데이터 값 $y$와 우리가 예측하는 데이터값 $\hat{y}$ 간의 차이, $\text{error} = y - \hat{y}$ 이 존재할 것이다.
 
 우리는 이 error가 central limit theorem에 의해 아래 그림과 같이 gaussian distribution을 따를 것이라 예측한다.
 
@@ -50,12 +50,12 @@ $$
 
 Log는 단조증가 함수이기 때문에, likelihood를 maximize 하는 것은 negative log likelihood를 minimize하는 것과 같다.
 
-굳이 log를 붙이는 이유에는 크게 두 가지가 있다.
+여기서 굳이 log를 붙이는 이유에는 크게 두 가지가 있다.
 
 1. Likelihood 값이 너무 작아져 컴퓨터가 잘못 처리하는 것을 방지하기 위해.
 2. 곱셈을 덧셈으로 바꾸기 위해.
 
-Negative를 붙이는 것은 (0~1) 사이인 likelihood 값에 log를 씌워 음수가 된 것을 다시 양수로 바꾼 후, 이를 loss로 취급하여 최소화시키기 위함이다.
+또한 negative를 붙이는 것은 (0~1) 사이인 likelihood 값에 log를 씌워 음수가 된 것을 다시 양수로 바꾼 후, 이를 loss로 취급하여 최소화하기 위함이다.
 
 
 
