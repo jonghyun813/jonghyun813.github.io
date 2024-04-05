@@ -22,9 +22,7 @@ NLP에서 transformer encoder는 일반적으로 vector로 embedding된 단어�
 
 이러한 encoder를 이미지에 사용하기 위해 ViT에서는 이미지를 이미지 patch들로 나누고, 각 패치에 위치 정보를 추가해 encoder에 넣는다.
 
-
-
-<img src="../assets/images/2024-03-11-Vision Transformer/다운로드.png" alt="다운로드" style="zoom: 50%;" />
+<img src="../assets/images/2024-03-11-Vision Transformer/다운로드.png" alt="다운로드" style="zoom: 50%;" class="align-center"/>
 
 
 
@@ -32,7 +30,7 @@ NLP에서 transformer encoder는 일반적으로 vector로 embedding된 단어�
 
 
 
-<img src="../assets/images/2024-03-11-Vision Transformer/다운로드 (1).png" alt="다운로드 (1)" style="zoom: 67%;" />
+<img src="../assets/images/2024-03-11-Vision Transformer/다운로드 (1).png" alt="다운로드 (1)" style="zoom: 67%;" class="align-center"/>
 
 
 
@@ -46,7 +44,7 @@ Positional embedding은 NLP에서 단어의 위치를 나타내는 것과 같이
 
 Encoder에서는 각 패치에 대한 정보를 self-attention 메커니즘을 통해 추출한다. 
 
-<img src="../assets/images/2024-03-11-Vision Transformer/vit_architecture.jpg" alt="vit_architecture" style="zoom: 33%;" />
+<img src="../assets/images/2024-03-11-Vision Transformer/vit_architecture.jpg" alt="vit_architecture" style="zoom: 33%;" class="align-center"/>
 
 Patch embedding을 통해 만든 196개의 (1, 768) 크기 vector들은 encoder를 통과한다.
 
@@ -62,7 +60,7 @@ MLP head에서는 encoder의 결과를 갖고 최종적으로 classify를 하게
 
 Transformer encoder의 output으로 (196, 768) 크기의 데이터가 나왔을 때, 첫 번 째 차원에 대해 mean을 구해 (1, 768) 크기의 vector를 만든다.
 
-이 벡터에 (768 $\rarr$ number of classes)로 매핑하는 fully connected layer를 연결하여 최종적으로 (1, number of classes) 크기의 output을 만들어낸다.
+이 벡터에 (768 $\rightarrow$ number of classes)로 매핑하는 fully connected layer를 연결하여 최종적으로 (1, number of classes) 크기의 output을 만들어낸다.
 
 
 
