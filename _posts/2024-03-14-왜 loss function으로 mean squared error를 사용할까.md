@@ -18,7 +18,7 @@ Linear regression을 처음 배울 때, loss function으로 mean squared error�
 
 Linear regression을 하게 되면, 실제 데이터 값 $y$와 우리가 예측하는 데이터값 $\hat{y}$ 간의 차이, $\text{error} = y - \hat{y}$ 이 존재할 것이다.
 
-우리는 이 error가 central limit theorem에 의해 아래 그림과 같이 gaussian distribution을 따를 것이라 예측한다.
+우리는 이 error가 gaussian distribution을 따른다고 가정한다.
 
 
 
