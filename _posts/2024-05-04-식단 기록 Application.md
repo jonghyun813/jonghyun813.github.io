@@ -153,11 +153,11 @@ Django에서 공식적으로 지원하는 데이터베이스는 모두 RDBMS 계
 
 세로형 성분표인 경우에는 아래 오른쪽 그림과 같이 아래에 있는 2개의 숫자 중, 옆에 ‘g’라는 문자가 있는 숫자로 매칭하였다.
 
-<div style="display: flex; justify-content: center; align-items: center;">   <img src="../assets/images/2024-05-04-식단 기록 Application/image-20240504201535921.png" alt="Image 1" style="width: 50%; height: auto;">   <img src="../assets/images/2024-05-04-식단 기록 Application/image-20240504201539414.png" alt="Image 2" style="width: 50%; height: auto;"> </div>
+<div style="display: flex; justify-content: center; align-items: center;">   <img src="../assets/images/2024-05-04-식단 기록 Application/image-20240504201535921.png" alt="Image 1" style="width: 30%; height: auto;">   <img src="../assets/images/2024-05-04-식단 기록 Application/image-20240504201539414.png" alt="Image 2" style="width: 30%; height: auto;"> </div>
 
 이 방법을 사용했을 때 일반적인 영양성분표에서는 문제가 없다. 그러나 아래와 같이 영양성분 정보가 다른 줄에 걸쳐서 배치된 경우 위치 기반 알고리즘으로 추출되지 않는다는 점이다. 이를 해결하기 위해, 문자열 기반으로 영양성분을 추출하는 알고리즘을 추가하였다.
 
-<div style="display: flex; justify-content: center; align-items: center;">   <img src="../assets/images/2024-05-04-식단 기록 Application/image-20240504201740721.png" alt="Image 1" style="width: 50%; height: auto;">   <img src="../assets/images/2024-05-04-식단 기록 Application/image-20240504201746579.png" alt="Image 2" style="width: 50%; height: auto;"> </div>
+<div style="display: flex; justify-content: center; align-items: center;">   <img src="../assets/images/2024-05-04-식단 기록 Application/image-20240504201740721.png" alt="Image 1" style="width: 30%; height: auto;">   <img src="../assets/images/2024-05-04-식단 기록 Application/image-20240504201746579.png" alt="Image 2" style="width: 30%; height: auto;"> </div>
 
 **문자열** **기반** **추출** **알고리즘**
 
